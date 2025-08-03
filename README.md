@@ -38,26 +38,18 @@ Infrastructure is managed with **Terraform**.
 ---
 
 ## 📂 Project Structure
-careerseekai-backend/
-│── app/
-│   ├── main.py            # FastAPI entry
-│   ├── config.py          # DB config (reads from Secrets Manager)
-│   ├── database.py        # SQLAlchemy connection
-│   ├── models/            # SQLAlchemy models
-│   ├── schemas/           # Pydantic schemas
-│   ├── routers/           # API routes
-│   └── auth/              # JWT auth logic
-│
-│── infra/                 # Terraform IaC
-│   ├── main.tf            # Lambda, API Gateway, RDS, Secrets Manager
-│   ├── variables.tf
-│   ├── outputs.tf
-│   └── backend.tf
-│
-│── requirements.txt
-│── README.md
-
----
+```
+careerseekai-api/
+    config.py
+    create_tables.py
+    database.py
+    main.py
+    requirements.txt
+    models/
+        user.py
+    scripts/
+        scripts.sh
+```
 
 ## 📡 API Endpoints (MVP)
 
