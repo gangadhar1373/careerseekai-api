@@ -40,13 +40,14 @@ Infrastructure is managed with **Terraform**.
 ## 📂 Project Structure
 ```
 careerseekai-api/
-    config.py
-    create_tables.py
-    database.py
-    main.py
-    requirements.txt
-    models/
-        user.py
+    app/
+        config.py
+        create_tables.py
+        database.py
+        main.py
+        requirements.txt
+        models/
+            user.py
     scripts/
         scripts.sh
 ```
